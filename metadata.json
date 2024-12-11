@@ -1,0 +1,456 @@
+{
+    "author": "Dex Manager",
+    "name": "TPL_MB_Multiple_2105.1401",
+    "description": "Template Multiple 1.0.2105.1401",
+    "version": "1.0.2105.1401",
+    "icon": "preview.jpg",
+    "preview": [
+        "preview.jpg"
+    ],
+    "tags": [
+        "menuboard",
+        "producto",
+        "pantalla",
+        "multiple"
+    ],
+    "properties": {
+        "minWidth": 1920,
+        "minHeight": 1080,
+        "responsive": true
+    },
+    "bindings": [
+        {
+            "id": "title",
+            "name": "Título",
+            "type": "String",
+            "value": "",
+            "groupId": 1,
+            "rules": {
+                "maxLength": 17
+            }
+        },
+        {
+            "id": "backgroundImage",
+            "name": "Background Imagen",
+            "type": "Image",
+            "value": "",
+            "groupId": 1
+        },
+        {
+            "id": "duration",
+            "name": "Duración de la transición",
+            "type": "String",
+            "value": "10",
+            "groupId": 1,
+            "rules": {
+                "regex": "^[0-9]*$",
+                "maxLength": 3
+            }
+        },
+        {
+            "id": "item1",
+            "name": "Item 1",
+            "type": "String",
+            "value": "",
+            "groupId": 2,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description1",
+            "name": "Descripción 1",
+            "type": "String",
+            "value": "",
+            "groupId": 2,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price1",
+            "name": "Precio 1",
+            "type": "String",
+            "value": "",
+            "groupId": 2,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image1",
+            "name": "Imagen 1",
+            "type": "Image",
+            "value": "",
+            "groupId": 2
+        },
+        {
+            "id": "backgroundImage1",
+            "name": "Fondo 1",
+            "type": "Image",
+            "value": "",
+            "groupId": 2
+        },
+        {
+            "id": "item2",
+            "name": "Item 2",
+            "type": "String",
+            "value": "",
+            "groupId": 3,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description2",
+            "name": "Descripción 2",
+            "type": "String",
+            "value": "",
+            "groupId": 3,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price2",
+            "name": "Precio 2",
+            "type": "String",
+            "value": "",
+            "groupId": 3,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image2",
+            "name": "Imagen 2",
+            "type": "Image",
+            "value": "",
+            "groupId": 3
+        },
+        {
+            "id": "backgroundImage2",
+            "name": "Fondo 2",
+            "type": "Image",
+            "value": "",
+            "groupId": 3
+        },
+        {
+            "id": "item3",
+            "name": "Item 3",
+            "type": "String",
+            "value": "",
+            "groupId": 4,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description3",
+            "name": "Descripción 3",
+            "type": "String",
+            "value": "",
+            "groupId": 4,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price3",
+            "name": "Precio 3",
+            "type": "String",
+            "value": "",
+            "groupId": 4,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image3",
+            "name": "Imagen 3",
+            "type": "Image",
+            "value": "",
+            "groupId": 4
+        },
+        {
+            "id": "backgroundImage3",
+            "name": "Fondo 3",
+            "type": "Image",
+            "value": "",
+            "groupId": 4
+        },
+        {
+            "id": "item4",
+            "name": "Item 4",
+            "type": "String",
+            "value": "",
+            "groupId": 5,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description4",
+            "name": "Descripción 4",
+            "type": "String",
+            "value": "",
+            "groupId": 5,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price4",
+            "name": "Precio 4",
+            "type": "String",
+            "value": "",
+            "groupId": 5,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image4",
+            "name": "Imagen 4",
+            "type": "Image",
+            "value": "",
+            "groupId": 5
+        },
+        {
+            "id": "backgroundImage4",
+            "name": "Fondo 4",
+            "type": "Image",
+            "value": "",
+            "groupId": 5
+        },
+        {
+            "id": "item5",
+            "name": "Item 5",
+            "type": "String",
+            "value": "",
+            "groupId": 6,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description5",
+            "name": "Descripción 5",
+            "type": "String",
+            "value": "",
+            "groupId": 6,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price5",
+            "name": "Precio 5",
+            "type": "String",
+            "value": "",
+            "groupId": 6,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image5",
+            "name": "Imagen 5",
+            "type": "Image",
+            "value": "",
+            "groupId": 6
+        },
+        {
+            "id": "backgroundImage5",
+            "name": "Fondo 5",
+            "type": "Image",
+            "value": "",
+            "groupId": 6
+        },
+        {
+            "id": "item6",
+            "name": "Item 6",
+            "type": "String",
+            "value": "",
+            "groupId": 7,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description6",
+            "name": "Descripción 6",
+            "type": "String",
+            "value": "",
+            "groupId": 7,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price6",
+            "name": "Precio 6",
+            "type": "String",
+            "value": "",
+            "groupId": 7,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image6",
+            "name": "Imagen 6",
+            "type": "Image",
+            "value": "",
+            "groupId": 7
+        },
+        {
+            "id": "backgroundImage6",
+            "name": "Fondo 6",
+            "type": "Image",
+            "value": "",
+            "groupId": 7
+        },
+        {
+            "id": "item7",
+            "name": "Item 7",
+            "type": "String",
+            "value": "",
+            "groupId": 8,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description7",
+            "name": "Descripción 7",
+            "type": "String",
+            "value": "",
+            "groupId": 8,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price7",
+            "name": "Precio 7",
+            "type": "String",
+            "value": "",
+            "groupId": 8,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image7",
+            "name": "Imagen 7",
+            "type": "Image",
+            "value": "",
+            "groupId": 8
+        },
+        {
+            "id": "backgroundImage7",
+            "name": "Fondo 7",
+            "type": "Image",
+            "value": "",
+            "groupId": 8
+        },
+        {
+            "id": "item8",
+            "name": "Item 8",
+            "type": "String",
+            "value": "",
+            "groupId": 9,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description8",
+            "name": "Descripción 8",
+            "type": "String",
+            "value": "",
+            "groupId": 9,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price8",
+            "name": "Precio 8",
+            "type": "String",
+            "value": "",
+            "groupId": 9,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image8",
+            "name": "Imagen 8",
+            "type": "Image",
+            "value": "",
+            "groupId": 9
+        },
+        {
+            "id": "backgroundImage8",
+            "name": "Fondo 8",
+            "type": "Image",
+            "value": "",
+            "groupId": 9
+        },
+        {
+            "id": "item9",
+            "name": "Item 9",
+            "type": "String",
+            "value": "",
+            "groupId": 10,
+            "rules": {
+                "maxLength": 19
+            }
+        },
+        {
+            "id": "description9",
+            "name": "Descripción 9",
+            "type": "String",
+            "value": "",
+            "groupId": 10,
+            "rules": {
+                "maxLength": 51
+            }
+        },
+        {
+            "id": "price9",
+            "name": "Precio 9",
+            "type": "String",
+            "value": "",
+            "groupId": 10,
+            "rules": {
+                "regex": "^[0-9]+([,.][0-9]+)?$",
+                "maxLength": 5
+            }
+        },
+        {
+            "id": "image9",
+            "name": "Imagen 9",
+            "type": "Image",
+            "value": "",
+            "groupId": 10
+        },
+        {
+            "id": "backgroundImage9",
+            "name": "Fondo 9",
+            "type": "Image",
+            "value": "",
+            "groupId": 10
+        }
+    ]
+}

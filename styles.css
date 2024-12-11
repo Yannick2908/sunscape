@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.container_icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.container_gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    gap: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+a .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Posicionamiento específico de las imágenes */
+.image:nth-child(1) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.image:nth-child(2) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.image:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.image:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.image:nth-child(5) {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* Posicionamiento específico de las imágenes iconos */
+.image_icons:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.image_icons:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.image_icons:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.image_icons:nth-child(4) {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.image_icons:nth-child(5) {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+
+/* Posicionamiento específico de las imágenes gallery */
+.image_gallery:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.image_gallery:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.image_gallery:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+
+ /* Estilos para el modal */
+ .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content, .close {
+    animation: zoom 0.6s;
+}
+
+
+
+
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+.modal-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 50%;
+}
+
+
+.modal-arrow:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#prev-image {
+    left: 20px;
+}
+
+#next-image {
+    right: 20px;
+}
+
+.container_icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.image_icons img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery.hidden {
+    display: none;
+}
+
+.gallery-images img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+/* Botón cerrar */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+/*ICONS ---- */
+.fixed-icons {
+	position: fixed;
+	z-index: 1000; /* Asegura que los iconos estén por encima de otros elementos */
+	display: flex;
+	gap: 15px; /* Espacio entre los iconos */
+  }
+  
+  .top-icons {
+	top: 20px; /* Coloca los iconos en la parte superior */
+	left: 20px; /* Posición inicial (puedes ajustar) */
+  }
+  
+  .bottom-icons {
+	bottom: 20px; /* Coloca los iconos en la parte inferior */
+	left: 20px; /* Posición inicial (puedes ajustar) */
+  }
+  
+  .icon {
+	background-color: #4d7aa7; /* Fondo blanco */
+	border-radius: 50%; /* Bordes redondeados */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  
+  .icon i {
+	font-size: 24px; /* Tamaño del icono */
+	color: #e9ecef; /* Color del icono */
+  }
